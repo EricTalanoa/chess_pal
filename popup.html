@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chess Pal</title>
+    <style>
+        /* Popup styling - keeps it clean and simple */
+        body {
+            width: 300px;
+            padding: 15px;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+        }
+
+        h1 {
+            margin: 0 0 15px 0;
+            font-size: 20px;
+            text-align: center;
+        }
+
+        .status {
+            background: rgba(255, 255, 255, 0.2);
+            padding: 10px;
+            border-radius: 5px;
+            margin-bottom: 10px;
+        }
+
+        .info {
+            font-size: 14px;
+            line-height: 1.6;
+        }
+
+        .button {
+            background: rgba(255, 255, 255, 0.9);
+            color: #667eea;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            width: 100%;
+            font-weight: bold;
+            margin-top: 10px;
+        }
+
+        .button:hover {
+            background: white;
+        }
+
+        .footer {
+            margin-top: 15px;
+            text-align: center;
+            font-size: 12px;
+            opacity: 0.8;
+        }
+    </style>
+</head>
+<body>
+    <!-- Main header -->
+    <h1>♟️ Chess Pal</h1>
+
+    <!-- Status section -->
+    <div class="status">
+        <div class="info">
+            <strong>Status:</strong> <span id="status">Ready</span><br>
+            <strong>Version:</strong> 1.0.0
+        </div>
+    </div>
+
+    <!-- Info section -->
+    <div class="info">
+        Open a Chess.com game to start analyzing your moves!
+    </div>
+
+    <!-- Action button -->
+    <button class="button" id="openChess">Go to Chess.com</button>
+
+    <!-- Footer -->
+    <div class="footer">
+        Click the extension icon anytime
+    </div>
+
+    <!-- Popup script - handles button clicks and UI interactions -->
+    <script src="popup.js"></script>
+</body>
+</html>
