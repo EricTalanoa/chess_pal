@@ -61,6 +61,12 @@ function convertToChessNotation(file, rank) {
 function displayBoardState() {
     const board = getBoardState();
 
+    // Sending data to background for analysis
+    chrome.runtime.sendMessage({
+        type: 'BOARD_STATE',
+        data: board
+    });
+
     console.log("=".repeat(40));
     console.log("Current Board State:");
     console.log("=".repeat(40));
